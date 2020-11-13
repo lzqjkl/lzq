@@ -21,7 +21,7 @@
               <el-menu-item index="1-1"><router-link to="/Product classification" tag="div" >• 商品类别</router-link></el-menu-item>
               <el-menu-item index="1-2"><router-link to="/Merchandise brand" tag="div" >• 商品品牌</router-link></el-menu-item>
               <el-menu-item index="1-3"><router-link to="/Commodity units" tag="div" >• 商品单位</router-link></el-menu-item>
-              <el-menu-item index="1-4">• 商品编码设置</el-menu-item>
+              <el-menu-item index="1-4"><router-link to="/Codingsettings" tag="div" >• 商品编码设置</router-link></el-menu-item>
               <el-menu-item index="1-5">• 商品档案</el-menu-item>
               <el-menu-item index="1-6"><router-link to="/Picturegallery" tag="div" >• 图片库管理</router-link></el-menu-item>
             </el-menu-item-group>
@@ -34,7 +34,7 @@
             <el-menu-item-group>
               <el-menu-item index="2-1"><router-link to="/Suppliermanagement" tag="div" >• 供应商管理</router-link></el-menu-item>
               <el-menu-item index="2-2"><router-link to="/Purchaseorder" tag="div" >• 采购单</router-link></el-menu-item>
-              <el-menu-item index="2-3">• 采购退货单</el-menu-item>
+              <el-menu-item index="2-3"><router-link to="/Returnorder" tag="div" >• 采购退货单</router-link></el-menu-item>
             </el-menu-item-group>
           </el-submenu>
           <el-submenu index="3" class="el-submenu__title1">
@@ -43,7 +43,7 @@
               <span>库存</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="3-1">• 商品入库</el-menu-item>
+              <el-menu-item index="3-1"><router-link to="/Storage" tag="div" >• 商品入库</router-link></el-menu-item>
               <el-menu-item index="3-2">• 库存调拔</el-menu-item>
               <el-menu-item index="3-3">• 商品出库</el-menu-item>
               <el-menu-item index="3-4">• 库存盘点</el-menu-item>

@@ -12,7 +12,7 @@
     </div>
     <el-row class="anlb">
         <router-link to="/Category">
-  <el-button type="primary" @click="dialogFormVisible = true">新增</el-button>
+  <el-button class="zuoq" type="primary" @click="dialogFormVisible = true">新增</el-button>
   </router-link>
     </el-row>
     <template>
@@ -73,6 +73,9 @@
 </template>
 
 <style>
+.zuoq{
+  margin-left: 1100px;
+}
 .block{
     margin-left: 300px;
 }

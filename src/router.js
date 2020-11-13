@@ -56,6 +56,19 @@ export default new Router({
         {
           path: '/purchaseorder',
           component: () => import('./views/Purchase/Purchaseorder.vue'),
+        },
+        {
+          path: '/codingsettings',
+          component: () => import('./views/Commodity/Codingsettings.vue'),
+        },{
+          path: '/returnorder',
+          component: () => import('./views/Purchase/Returnorder.vue'),
+        },{
+          path: '/storage',
+          component: () => import('./views/Inventory/Storage.vue'),
+        },{
+          path: '/newchudan',
+          component: () => import('./views/Public/Newchudan.vue'),
         }
       ]
     }

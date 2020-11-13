@@ -47,7 +47,7 @@
     <el-table-column
       fixed
       prop="date"
-      label="采购编号"
+      label="采购退货单号"
       width="170">
     </el-table-column>
     <el-table-column
@@ -62,18 +62,18 @@
     </el-table-column>
     <el-table-column
       prop="zpsl"
-      label="采购人员"
-      width="120">
+      label="采购关联单号"
+      width="150">
     </el-table-column>
      <el-table-column
       prop="miaoshu"
-      label="制单人员"
+      label="制单人"
       width="100">
     </el-table-column>
     <el-table-column
       prop="paixu"
       label="制单日期"
-      width="220">
+      width="200">
     </el-table-column>
     <el-table-column
       prop="cjsj"
@@ -82,7 +82,7 @@
     </el-table-column>
     <el-table-column
       prop="lkzt"
-      label="入库状态"
+      label="出库状态"
       width="130">
     </el-table-column>
     <el-table-column
@@ -160,7 +160,7 @@ export default {
           date: 'CG2018042810101',
           name: '产品大神供应商',
           province: '10000.00',
-          zpsl:'---',
+          zpsl:'CG2018042810101',
           miaoshu:'syds',
           paixu:'2018-04-28',
           cjsj:'待审核',
@@ -169,7 +169,7 @@ export default {
           date: 'CG2018042810101',
           name: '产品大神供应商',
           province: '10000.00',
-          zpsl:'十月大神',
+          zpsl:'CG2018042810101',
           miaoshu:'syds',
           paixu:'2018-04-28',
           cjsj:'审核失败',
@@ -178,7 +178,7 @@ export default {
           date: 'CG2018042810101',
           name: '产品大神供应商',
           province: '10000.00',
-          zpsl: '八月大神',
+          zpsl: 'CG2018042810101',
           miaoshu:'syds',
           paixu:'2018-04-28',
           cjsj:'审核成功',
@@ -187,7 +187,7 @@ export default {
           date: 'CG2018042810101',
           name: '产品大神供应商',
           province: '10000.00',
-          zpsl: '八月大神',
+          zpsl: 'CG2018042810101',
           miaoshu:'syds',
           paixu:'2018-04-28',
           cjsj:'审核成功',
@@ -196,7 +196,7 @@ export default {
           date: 'CG2018042810101',
           name: '产品大神供应商',
           province: '10000.00',
-          zpsl: '八月大神',
+          zpsl: 'CG2018042810101',
           miaoshu:'syds',
           paixu:'2018-04-28',
           cjsj:'审核成功',
@@ -205,7 +205,7 @@ export default {
           date: 'CG2018042810101',
           name: '产品大神供应商',
           province: '10000.00',
-          zpsl: '八月大神',
+          zpsl: 'CG2018042810101',
           miaoshu:'syds',
           paixu:'2018-04-28',
           cjsj:'审核成功',
@@ -214,7 +214,7 @@ export default {
           date: 'CG2018042810101',
           name: '产品大神供应商',
           province: '10000.00',
-          zpsl: '八月大神',
+          zpsl: 'CG2018042810101',
           miaoshu:'syds',
           paixu:'2018-04-28',
           cjsj:'审核成功',
@@ -223,7 +223,7 @@ export default {
           date: 'CG2018042810101',
           name: '产品大神供应商',
           province: '10000.00',
-          zpsl: '八月大神',
+          zpsl: 'CG2018042810101',
           miaoshu:'syds',
           paixu:'2018-04-28',
           cjsj:'审核成功',
@@ -232,7 +232,7 @@ export default {
           date: 'CG2018042810101',
           name: '产品大神供应商',
           province: '10000.00',
-          zpsl: '八月大神',
+          zpsl: 'CG2018042810101',
           miaoshu:'syds',
           paixu:'2018-04-28',
           cjsj:'审核成功',

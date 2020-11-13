@@ -16,7 +16,7 @@
   <p>* 所需经验值：<el-input class="chuangdia" v-model="input2" placeholder="请输入内容"></el-input></p>
   <router-link to="/Level">
   <p class="zhuob"><el-button type="primary" :plain="true" @click="open2">保存</el-button>
-  <el-button :plain="true" @click="open4">错误</el-button></p>
+  <el-button :plain="true" @click="open4">取消</el-button></p>
   </router-link>
     </div>
 </template>
@@ -64,12 +64,12 @@ export default {
      methods: {
       open2() {
         this.$message({
-          message: '恭喜你，这是一条成功消息',
+          message: '保存成功',
           type: 'success'
         });
       },
       open4() {
-        this.$message.error('错了哦，这是一条错误消息');
+        this.$message.error('没有保存');
       }
     }
   }
