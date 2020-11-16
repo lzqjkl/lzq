@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="marja">
     <div class="box1">
       <el-input placeholder="请输入供应商名称/编码" v-model="input3" class="input-with-select">
       <el-button
@@ -86,7 +86,10 @@
 </template>
 
 <style>
-
+.marja{
+  margin-left: 220px;
+  margin-top: 65px;
+}
 .anjian{
     margin-left: 1050px;
     margin-bottom: 15px;

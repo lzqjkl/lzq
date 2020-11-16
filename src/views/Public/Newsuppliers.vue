@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="marg">
         <div>
             <p>基本信息</p>
             <hr/>
@@ -61,6 +61,10 @@
     </div>
 </template>
 <style>
+.marg{
+  margin-left: 220px;
+  margin-top: 65px;
+}
 .anl2{
     margin-left: 100px;
 }

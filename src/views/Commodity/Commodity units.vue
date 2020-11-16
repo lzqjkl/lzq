@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="marb">
     <div class="box1">
       <el-input placeholder="请输入单位名称/编码" v-model="input3" class="input-with-select">
       <el-button
@@ -78,6 +78,10 @@
 </template>
 
 <style>
+.marb{
+  margin-left: 220px;
+  margin-top: 65px;
+}
 .block{
     margin-left: 300px;
 }

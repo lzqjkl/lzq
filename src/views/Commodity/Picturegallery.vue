@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="mard">
    <div class="box1">
       <el-input placeholder="请输入相册名称" v-model="input3" class="input-with-select">
       <el-button
@@ -85,6 +85,10 @@
 </template>
 
 <style>
+.mard{
+  margin-left: 220px;
+  margin-top: 65px;
+}
 .block{
     margin-left: 300px;
 }

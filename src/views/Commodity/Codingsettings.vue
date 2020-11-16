@@ -22,6 +22,8 @@
 }
 .da{
     margin-top: 80px;
+    margin-left: 220px;
+    margin-top: 65px;
 }
 .bmgz3{
     margin-left: 20px;

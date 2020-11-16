@@ -69,6 +69,30 @@ export default new Router({
         },{
           path: '/newchudan',
           component: () => import('./views/Public/Newchudan.vue'),
+        },{
+          path: '/inventorypull',
+          component: () => import('./views/Inventory/Inventorypull.vue'),
+        },{
+          path: '/library',
+          component: () => import('./views/Inventory/library.vue'),
+        },{
+          path: '/inventorycounting',
+          component: () => import('./views/Inventory/Inventorycounting.vue'),
+        },{
+          path: '/inventorydetails',
+          component: () => import('./views/Inventory/Inventorydetails.vue'),
+        },{
+          path: '/SpInventory',
+          component: () => import('./views/Inventory/SpInventory.vue'),
+        },{
+          path: '/orderpromotion',
+          component: () => import('./views/Promotion/Orderpromotion.vue'),
+        },{
+          path: '/merchandisepromotion',
+          component: () => import('./views/Promotion/Merchandisepromotion.vue'),
+        },{
+          path: '/file',
+          component: () => import('./views/Commodity/File.vue'),
         }
       ]
     }

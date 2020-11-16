@@ -1,32 +1,19 @@
 <template>
-    <div class="marab">
+    <div class="maraba">
     <p>
     <el-dropdown>
   <span class="el-dropdown-link">
-    审核状态<i class="el-icon-arrow-down el-icon--right"></i>
+    促销状态<i class="el-icon-arrow-down el-icon--right"></i>
   </span>
   <el-dropdown-menu slot="dropdown">
-    <el-dropdown-item>入库类型</el-dropdown-item>
-    <el-dropdown-item>采购入库</el-dropdown-item>
-    <el-dropdown-item>调拔入库</el-dropdown-item>
-    <el-dropdown-item>销售退货入库</el-dropdown-item>
-    <el-dropdown-item>盘盈入库</el-dropdown-item>
-    <el-dropdown-item>其他入库</el-dropdown-item>
+    <el-dropdown-item>审核状态</el-dropdown-item>
+    <el-dropdown-item>待促销</el-dropdown-item>
+    <el-dropdown-item>促销中</el-dropdown-item>
+    <el-dropdown-item>已暂停</el-dropdown-item>
+    <el-dropdown-item>已结束</el-dropdown-item>
   </el-dropdown-menu>
 </el-dropdown>
- <el-dropdown>
-  <span class="el-dropdown-link">
-    入库类型<i class="el-icon-arrow-down el-icon--right"></i>
-  </span>
-  <el-dropdown-menu slot="dropdown">
-    <el-dropdown-item>入库状态</el-dropdown-item>
-    <el-dropdown-item>已作废</el-dropdown-item>
-    <el-dropdown-item>待入库</el-dropdown-item>
-    <el-dropdown-item>部分入库</el-dropdown-item>
-    <el-dropdown-item>已入库</el-dropdown-item>
-  </el-dropdown-menu>
-</el-dropdown>
-<el-input placeholder="请输入入库单号" v-model="input" class="input-with-select">
+<el-input placeholder="请输入促销编号" v-model="input" class="input-with-select">
       <el-button
         slot="append"
         icon="el-icon-search"
@@ -49,49 +36,44 @@
     <el-table-column
       fixed
       prop="date"
-      label="入库单号"
+      label="促销编码"
       width="170">
     </el-table-column>
     <el-table-column
       prop="name"
-      label="入库门店"
+      label="促销门店"
       width="150">
     </el-table-column>
     <el-table-column
       prop="province"
-      label="入库类型"
-      width="150">
+      label="促销日期"
+      width="250">
     </el-table-column>
     <el-table-column
       prop="zpsl"
-      label="入库数量"
+      label="制单人员"
       width="150">
     </el-table-column>
      <el-table-column
       prop="miaoshu"
-      label="经办人员"
-      width="100">
-    </el-table-column>
-    <el-table-column
-      prop="paixu"
-      label="制单人员"
-      width="100">
-    </el-table-column>
-    <el-table-column
-      prop="cjsj"
-      label="制单日期"
+      label="审核日期"
       width="150">
     </el-table-column>
     <el-table-column
-      prop="lkzt"
+      prop="paixu"
       label="审核状态"
+      width="120">
+    </el-table-column>
+    <el-table-column
+      prop="cjsj"
+      label="促销状态"
       width="150">
     </el-table-column>
     <el-table-column
       fixed="right"
       label="操作"
       width="50">
-     <el-tooltip placement="bottom">
+      <el-tooltip placement="bottom">
   <div slot="content">详情<br/>修改<br/>审核<br/>删除</div>
   <el-button style="border: none;    padding: 0px 0px;"> ...</el-button>
 </el-tooltip>
@@ -113,7 +95,7 @@
     
 </template>
 <style>
-.marab{
+.maraba{
   margin-left: 220px;
   margin-top: 65px;
 }
@@ -177,86 +159,77 @@ export default {
           input: '',
           fullscreenLoading: false,
           tableData: [{
-          date: 'IO2018042810101',
+          date: 'DB2018042810101',
           name: '产品大神（幸福店）',
-          province: '其他入库',
-          zpsl:'1000',
-          miaoshu:'---',
-          paixu:'syds',
-          cjsj:'2018-04-28',
-          lkzt:'审核失败',
+          province: '2018-04-28 ~  2018-05-28',
+          zpsl:'syds',
+          miaoshu:'2018-04-28',
+          paixu:'待审核',
+          cjsj:'待促销',
         }, {
-          date: 'IO2018042810101',
+          date: 'DB2018042810101',
           name: '产品大神（幸福店）',
-          province: '其他入库',
-          zpsl:'1000',
-          miaoshu:'十月大神',
-          paixu:'syds',
-          cjsj:'2018-04-27',
-          lkzt:'审核成功',
+          province: '2018-04-28 ~  2018-05-28',
+          zpsl:'syds',
+          miaoshu:'2018-04-28',
+          paixu:'待审核',
+          cjsj:'待促销',
         }, {
-          date: 'IO2018042810101',
+          date: 'DB2018042810101',
           name: '产品大神（幸福店）',
-          province: '其他入库',
-          zpsl: '1000',
-          miaoshu:'八月大神',
-          paixu:'syds',
-          cjsj:'2018-04-27',
-          lkzt:'待审核',
+          province: '2018-04-28 ~  2018-05-28',
+          zpsl:'syds',
+          miaoshu:'2018-04-28',
+          paixu:'待审核',
+          cjsj:'待促销',
         }, {
-          date: 'IO2018042810101',
+         date: 'DB2018042810101',
           name: '产品大神（幸福店）',
-          province: '其他入库',
-          zpsl: '1000',
-          miaoshu:'八月大神',
-          paixu:'syds',
-          cjsj:'2018-04-27',
-          lkzt:'审核成功',
+          province: '2018-04-28 ~  2018-05-28',
+          zpsl:'syds',
+          miaoshu:'2018-04-28',
+          paixu:'待审核',
+          cjsj:'待促销',
         }, {
-          date: 'IO2018042810101',
+          date: 'DB2018042810101',
           name: '产品大神（幸福店）',
-          province: '其他入库',
-          zpsl: '1000',
-          miaoshu:'---',
-          paixu:'syds',
-          cjsj:'2018-04-27',
-          lkzt:'审核成功',
+          province: '2018-04-28 ~  2018-05-28',
+          zpsl:'syds',
+          miaoshu:'2018-04-28',
+          paixu:'待审核',
+          cjsj:'待促销',
         }, {
-          date: 'IO2018042810101',
+         date: 'DB2018042810101',
           name: '产品大神（幸福店）',
-          province: '其他入库',
-          zpsl: '1000',
-          miaoshu:'八月大神',
-          paixu:'syds',
-          cjsj:'2018-04-27',
-          lkzt:'审核成功',
+          province: '2018-04-28 ~  2018-05-28',
+          zpsl:'syds',
+          miaoshu:'2018-04-28',
+          paixu:'待审核',
+          cjsj:'待促销',
         }, {
-          date: 'IO2018042810101',
+         date: 'DB2018042810101',
           name: '产品大神（幸福店）',
-          province: '其他入库',
-          zpsl: '1000',
-          miaoshu:'八月大神',
-          paixu:'syds',
-          cjsj:'2018-04-27',
-          lkzt:'审核成功',
+          province: '2018-04-28 ~  2018-05-28',
+          zpsl:'syds',
+          miaoshu:'2018-04-28',
+          paixu:'待审核',
+          cjsj:'待促销',
         }, {
-          date: 'IO2018042810101',
+         date: 'DB2018042810101',
           name: '产品大神（幸福店）',
-          province: '其他入库',
-          zpsl: '1000',
-          miaoshu:'八月大神',
-          paixu:'syds',
-          cjsj:'2018-04-27',
-          lkzt:'审核成功',
+          province: '2018-04-28 ~  2018-05-28',
+          zpsl:'syds',
+          miaoshu:'2018-04-28',
+          paixu:'待审核',
+          cjsj:'待促销',
         }, {
-          date: 'IO2018042810101',
+          date: 'DB2018042810101',
           name: '产品大神（幸福店）',
-          province: '其他入库',
-          zpsl: '1000',
-          miaoshu:'八月大神',
-          paixu:'syds',
-          cjsj:'2018-04-27',
-          lkzt:'待审核',
+          province: '2018-04-28 ~  2018-05-28',
+          zpsl:'syds',
+          miaoshu:'2018-04-28',
+          paixu:'待审核',
+          cjsj:'待促销',
         }]
       }
     }

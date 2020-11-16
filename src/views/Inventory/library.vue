@@ -6,7 +6,18 @@
     审核状态<i class="el-icon-arrow-down el-icon--right"></i>
   </span>
   <el-dropdown-menu slot="dropdown">
-    <el-dropdown-item>入库类型</el-dropdown-item>
+    <el-dropdown-item>审核状态</el-dropdown-item>
+    <el-dropdown-item>待审核</el-dropdown-item>
+    <el-dropdown-item>审核失败</el-dropdown-item>
+    <el-dropdown-item>审核成功</el-dropdown-item>
+  </el-dropdown-menu>
+</el-dropdown>
+ <el-dropdown>
+  <span class="el-dropdown-link">
+    出库类型<i class="el-icon-arrow-down el-icon--right"></i>
+  </span>
+  <el-dropdown-menu slot="dropdown">
+   <el-dropdown-item>入库类型</el-dropdown-item>
     <el-dropdown-item>采购入库</el-dropdown-item>
     <el-dropdown-item>调拔入库</el-dropdown-item>
     <el-dropdown-item>销售退货入库</el-dropdown-item>
@@ -14,19 +25,7 @@
     <el-dropdown-item>其他入库</el-dropdown-item>
   </el-dropdown-menu>
 </el-dropdown>
- <el-dropdown>
-  <span class="el-dropdown-link">
-    入库类型<i class="el-icon-arrow-down el-icon--right"></i>
-  </span>
-  <el-dropdown-menu slot="dropdown">
-    <el-dropdown-item>入库状态</el-dropdown-item>
-    <el-dropdown-item>已作废</el-dropdown-item>
-    <el-dropdown-item>待入库</el-dropdown-item>
-    <el-dropdown-item>部分入库</el-dropdown-item>
-    <el-dropdown-item>已入库</el-dropdown-item>
-  </el-dropdown-menu>
-</el-dropdown>
-<el-input placeholder="请输入入库单号" v-model="input" class="input-with-select">
+<el-input placeholder="请输入出库单号" v-model="input" class="input-with-select">
       <el-button
         slot="append"
         icon="el-icon-search"
@@ -49,22 +48,22 @@
     <el-table-column
       fixed
       prop="date"
-      label="入库单号"
+      label="出库单号"
       width="170">
     </el-table-column>
     <el-table-column
       prop="name"
-      label="入库门店"
+      label="出库门店"
       width="150">
     </el-table-column>
     <el-table-column
       prop="province"
-      label="入库类型"
+      label="出库类型"
       width="150">
     </el-table-column>
     <el-table-column
       prop="zpsl"
-      label="入库数量"
+      label="出库数量"
       width="150">
     </el-table-column>
      <el-table-column
@@ -91,7 +90,7 @@
       fixed="right"
       label="操作"
       width="50">
-     <el-tooltip placement="bottom">
+       <el-tooltip placement="bottom">
   <div slot="content">详情<br/>修改<br/>审核<br/>删除</div>
   <el-button style="border: none;    padding: 0px 0px;"> ...</el-button>
 </el-tooltip>

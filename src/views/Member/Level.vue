@@ -85,6 +85,8 @@
 }
 .lebe{
   float:right;
+  margin-left: 220px;
+  margin-top: 65px;
 }
 </style>
 <script>

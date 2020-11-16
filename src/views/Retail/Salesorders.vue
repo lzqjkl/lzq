@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="mark">
     <div class="box1">
       <el-input placeholder="请输入商店名称/编码" v-model="input3" class="input-with-select">
       <el-button
@@ -108,6 +108,10 @@
 </template>
 
 <style>
+.mark{
+  margin-left: 220px;
+  margin-top: 65px;
+}
 .anla{
     margin-left: 1125px;
     margin-bottom: 10px;

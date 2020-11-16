@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="mara">
     <div class="box1">
       <el-input placeholder="请输入类别名称/编码" v-model="input3" class="input-with-select">
       <el-button
@@ -90,6 +90,10 @@
 </template>
 
 <style>
+.mara{
+  margin-left: 220px;
+  margin-top: 65px;
+}
 .anl{
     margin-left: 1050px;
     margin-bottom: 10px;

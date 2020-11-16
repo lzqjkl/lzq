@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="marh">
     <p>
     <el-dropdown>
   <span class="el-dropdown-link">
@@ -34,7 +34,7 @@
       ></el-button>
 </el-input>
 <span class="bju">高级搜索</span>
-<el-row class="anjiana">
+<el-row class="anna">
   <el-button>导出</el-button>
       <el-button type="primary">新增</el-button>
     </el-row>
@@ -110,9 +110,13 @@
     
 </template>
 <style>
-.anjiana{
+.marh{
+  margin-left: 220px;
+  margin-top: 65px;
+}
+.anna{
   margin-left: 1050px;
-  margin-top: -40px;
+  margin-top: -50px;
 }
 .input-with-select{
   margin: 5px;

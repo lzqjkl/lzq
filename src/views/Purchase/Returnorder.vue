@@ -1,45 +1,45 @@
-<template>
-    <div>
-    <p>
-    <el-dropdown>
-  <span class="el-dropdown-link">
-    审核状态<i class="el-icon-arrow-down el-icon--right"></i>
-  </span>
-  <el-dropdown-menu slot="dropdown">
-    <el-dropdown-item>审核状态</el-dropdown-item>
-    <el-dropdown-item>待审核</el-dropdown-item>
-    <el-dropdown-item>审核失败</el-dropdown-item>
-    <el-dropdown-item>审核成功</el-dropdown-item>
-  </el-dropdown-menu>
-</el-dropdown>
- <el-dropdown>
-  <span class="el-dropdown-link">
-    入库状态<i class="el-icon-arrow-down el-icon--right"></i>
-  </span>
-  <el-dropdown-menu slot="dropdown">
-    <el-dropdown-item>入库状态</el-dropdown-item>
-    <el-dropdown-item>已作废</el-dropdown-item>
-    <el-dropdown-item>待入库</el-dropdown-item>
-    <el-dropdown-item>部分入库</el-dropdown-item>
-    <el-dropdown-item>已入库</el-dropdown-item>
-  </el-dropdown-menu>
-</el-dropdown>
-<el-input placeholder="请输入供应商名称/编码" v-model="input" class="input-with-select">
-      <el-button
-        slot="append"
-        icon="el-icon-search"
-        type="primary"
-        @click="openFullScreen2"
-        v-loading.fullscreen.lock="fullscreenLoading"
-      ></el-button>
-</el-input>
-<span class="bju">高级搜索</span>
-<el-row class="anjiana">
-  <el-button>导出</el-button>
-      <el-button type="primary">新增</el-button>
-    </el-row>
-</p>
   <template>
+      <div class="maria">
+      <p>
+      <el-dropdown>
+    <span class="el-dropdown-link">
+      审核状态<i class="el-icon-arrow-down el-icon--right"></i>
+    </span>
+    <el-dropdown-menu slot="dropdown">
+      <el-dropdown-item>审核状态</el-dropdown-item>
+      <el-dropdown-item>待审核</el-dropdown-item>
+      <el-dropdown-item>审核失败</el-dropdown-item>
+      <el-dropdown-item>审核成功</el-dropdown-item>
+    </el-dropdown-menu>
+  </el-dropdown>
+  <el-dropdown>
+    <span class="el-dropdown-link">
+      出库状态<i class="el-icon-arrow-down el-icon--right"></i>
+    </span>
+    <el-dropdown-menu slot="dropdown">
+      <el-dropdown-item>入库状态</el-dropdown-item>
+      <el-dropdown-item>已作废</el-dropdown-item>
+      <el-dropdown-item>待入库</el-dropdown-item>
+      <el-dropdown-item>部分入库</el-dropdown-item>
+      <el-dropdown-item>已入库</el-dropdown-item>
+    </el-dropdown-menu>
+  </el-dropdown>
+  <el-input placeholder="请输入供应商名称/编码" v-model="input" class="input-with-select">
+        <el-button
+          slot="append"
+          icon="el-icon-search"
+          type="primary"
+          @click="openFullScreen2"
+          v-loading.fullscreen.lock="fullscreenLoading"
+        ></el-button>
+  </el-input>
+  <span class="bju">高级搜索</span>
+  <el-row class="annb">
+    <el-button>导出</el-button>
+        <el-button type="primary">新增</el-button>
+      </el-row>
+  </p>
+    <template>
   <el-table
     :data="tableData"
     border
@@ -110,9 +110,13 @@
     
 </template>
 <style>
-.anjiana{
+.maria{
+  margin-left: 220px;
+  margin-top: 65px;
+}
+.annb{
   margin-left: 1050px;
-  margin-top: -40px;
+  margin-top: -50px;
 }
 .input-with-select{
   margin: 5px;

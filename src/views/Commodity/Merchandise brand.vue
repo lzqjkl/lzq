@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="marc">
     <div class="box1">
       <el-input placeholder="请输入品牌名称/编码" v-model="input3" class="input-with-select">
       <el-button
@@ -79,6 +79,10 @@
 
 <style>
 
+.marc{
+  margin-left: 220px;
+  margin-top: 65px;
+}
 .block{
     margin-left: 300px;
 }

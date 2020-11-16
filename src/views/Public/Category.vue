@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="marf">
         <p class="zhuoa">* 编码：<el-input class="chuangdia" placeholder="01" v-model="input1" :disabled="true">
 </el-input></p>
 <p class="zhuob">* 等级名称：<el-input class="chuangdia" v-model="input" placeholder="请输入内容"></el-input></p>
@@ -29,6 +29,10 @@
 }
 .chuangdia{
     width: 300px;
+}
+.marf{
+  margin-left: 220px;
+  margin-top: 65px;
 }
 </style>
 <script>
