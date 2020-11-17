@@ -73,8 +73,10 @@
 </template>
 
 <style>
+
 .zuoq{
   margin-left: 1100px;
+  margin-bottom: 10px;
 }
 .block{
     margin-left: 300px;

@@ -93,6 +93,30 @@ export default new Router({
         },{
           path: '/file',
           component: () => import('./views/Commodity/File.vue'),
+        },{
+          path: '/ZdReturnorder',
+          component: () => import('./views/Retail/ZdReturnorder.vue'),
+        },{
+          path: '/ZdSalesorders',
+          component: () => import('./views/Retail/ZdSalesorders.vue'),
+        },{
+          path: '/Terminalsalesdetails',
+          component: () => import('./views/Retail/Terminalsalesdetails.vue'),
+        },{
+          path: '/Terminalfinancialdetails',
+          component: () => import('./views/Retail/Terminalfinancialdetails.vue'),
+        },{
+          path: '/Salestransactions',
+          component: () => import('./views/Retail/Salestransactions.vue'),
+        },{
+          path: '/Cashregister',
+          component: () => import('./views/Retail/Cashregister.vue'),
+        },{
+          path: '/Financialrefunds',
+          component: () => import('./views/Retail/Financialrefunds.vue'),
+        },{
+          path: '/MemberList',
+          component: () => import('./views/Member/MemberList.vue'),
         }
       ]
     }

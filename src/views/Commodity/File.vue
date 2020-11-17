@@ -44,58 +44,61 @@
     :data="tableData"
     tooltip-effect="dark"
     style="width: 100%"
-    @selection-change="handleSelectionChange">
+    @selection-change="handleSelectionChange" border>
     <el-table-column
-      fixed
-      prop="date"
+      type="selection"
+      width="55">
+    </el-table-column>
+    <el-table-column
       label="编码"
-      width="130">
+      width="140">
+      <template slot-scope="scope">{{ scope.row.date }}</template>
     </el-table-column>
     <el-table-column
       prop="name"
       label="名称"
-      width="220">
+      width="210">
     </el-table-column>
     <el-table-column
-      prop="province"
+      prop="address"
       label="单位"
-      width="50">
+      width="60">
     </el-table-column>
     <el-table-column
-      prop="zpsl"
+      prop="leibie"
       label="类别"
-      width="100">
+      width="120">
     </el-table-column>
-     <el-table-column
-      prop="miaoshu"
+    <el-table-column
+      prop="lingshojia"
       label="零售价"
-      width="100">
+      width="120">
     </el-table-column>
     <el-table-column
-      prop="paixu"
+      prop="zuidisj"
       label="最低销售价"
-      width="100">
+      width="120">
     </el-table-column>
     <el-table-column
-      prop="cjsj"
+      prop="shiczdj"
       label="市场指导价"
-      width="150">
+      width="120">
     </el-table-column>
     <el-table-column
-      prop="lkzt"
+      prop="cbckj"
       label="成本参考价"
-      width="150">
+      width="120">
     </el-table-column>
     <el-table-column
-      prop="zhuangtai"
+      prop="ztai"
       label="状态"
-      width="150">
+      width="80">
     </el-table-column>
     <el-table-column
       fixed="right"
       label="操作"
       width="50">
-     <el-tooltip placement="bottom">
+      <el-tooltip placement="bottom">
   <div slot="content">详情<br/>修改<br/>上架/下架<br/>删除</div>
   <el-button style="border: none;    padding: 0px 0px;"> ...</el-button>
 </el-tooltip>
@@ -159,16 +162,7 @@
 <script>
 export default {
      methods: {
-         toggleSelection(rows) {
-        if (rows) {
-          rows.forEach(row => {
-            this.$refs.multipleTable.toggleRowSelection(row);
-          });
-        } else {
-          this.$refs.multipleTable.clearSelection();
-        }
-      },
-      handleSelectionChange(val) {
+       handleSelectionChange(val) {
         this.multipleSelection = val;
       },
       openFullScreen2() {
@@ -195,94 +189,105 @@ export default {
           tableData: [{
           date: '6210000000001',
           name: '清风抽取式面巾纸150抽X2层',
-          province: '包',
-          zpsl:'生活用品',
-          miaoshu:'8.00',
-          paixu:'5.00',
-          cjsj:'18.00',
-          lkzt:'3.00',
-          zhuangtai:'上架',
+          address: '包',
+          leibie:'生活用品',
+          lingshojia:'8.00',
+          zuidisj:'5.00',
+          shiczdj:'18.00',
+          cbckj:'3.00',
+          ztai:'上架'
         }, {
           date: '6210000000001',
           name: '清风抽取式面巾纸150抽X2层',
-          province: '包',
-          zpsl:'生活用品',
-          miaoshu:'8.00',
-          paixu:'5.00',
-          cjsj:'18.00',
-          lkzt:'3.00',
-          zhuangtai:'上架',
+          address: '包',
+          leibie:'生活用品',
+          lingshojia:'8.00',
+          zuidisj:'5.00',
+          shiczdj:'18.00',
+          cbckj:'3.00',
+          ztai:'上架'
         }, {
           date: '6210000000001',
           name: '清风抽取式面巾纸150抽X2层',
-          province: '包',
-          zpsl:'生活用品',
-          miaoshu:'8.00',
-          paixu:'5.00',
-          cjsj:'18.00',
-          lkzt:'3.00',
-          zhuangtai:'上架',
+          address: '包',
+          leibie:'生活用品',
+          lingshojia:'8.00',
+          zuidisj:'5.00',
+          shiczdj:'18.00',
+          cbckj:'3.00',
+          ztai:'上架'
         }, {
           date: '6210000000001',
           name: '清风抽取式面巾纸150抽X2层',
-          province: '包',
-          zpsl:'生活用品',
-          miaoshu:'8.00',
-          paixu:'5.00',
-          cjsj:'18.00',
-          lkzt:'3.00',
-          zhuangtai:'上架',
+          address: '包',
+          leibie:'生活用品',
+          lingshojia:'8.00',
+          zuidisj:'5.00',
+          shiczdj:'18.00',
+          cbckj:'3.00',
+          ztai:'上架'
         }, {
           date: '6210000000001',
           name: '清风抽取式面巾纸150抽X2层',
-          province: '包',
-          zpsl:'生活用品',
-          miaoshu:'8.00',
-          paixu:'5.00',
-          cjsj:'18.00',
-          lkzt:'3.00',
-          zhuangtai:'上架',
-        }, {
-         date: '6210000000001',
-          name: '清风抽取式面巾纸150抽X2层',
-          province: '包',
-          zpsl:'生活用品',
-          miaoshu:'8.00',
-          paixu:'5.00',
-          cjsj:'18.00',
-          lkzt:'3.00',
-          zhuangtai:'上架',
+          address: '包',
+          leibie:'生活用品',
+          lingshojia:'8.00',
+          zuidisj:'5.00',
+          shiczdj:'18.00',
+          cbckj:'3.00',
+          ztai:'上架'
         }, {
           date: '6210000000001',
           name: '清风抽取式面巾纸150抽X2层',
-          province: '包',
-          zpsl:'生活用品',
-          miaoshu:'8.00',
-          paixu:'5.00',
-          cjsj:'18.00',
-          lkzt:'3.00',
-          zhuangtai:'上架',
+          address: '包',
+          leibie:'生活用品',
+          lingshojia:'8.00',
+          zuidisj:'5.00',
+          shiczdj:'18.00',
+          cbckj:'3.00',
+          ztai:'上架'
         }, {
           date: '6210000000001',
           name: '清风抽取式面巾纸150抽X2层',
-          province: '包',
-          zpsl:'生活用品',
-          miaoshu:'8.00',
-          paixu:'5.00',
-          cjsj:'18.00',
-          lkzt:'3.00',
-          zhuangtai:'上架',
+          address: '包',
+          leibie:'生活用品',
+          lingshojia:'8.00',
+          zuidisj:'5.00',
+          shiczdj:'18.00',
+          cbckj:'3.00',
+          ztai:'上架'
         }, {
           date: '6210000000001',
           name: '清风抽取式面巾纸150抽X2层',
-          province: '包',
-          zpsl:'生活用品',
-          miaoshu:'8.00',
-          paixu:'5.00',
-          cjsj:'18.00',
-          lkzt:'3.00',
-          zhuangtai:'上架',
-        }]
+          address: '包',
+          leibie:'生活用品',
+          lingshojia:'8.00',
+          zuidisj:'5.00',
+          shiczdj:'18.00',
+          cbckj:'3.00',
+          ztai:'上架'
+        }, {
+          date: '6210000000001',
+          name: '清风抽取式面巾纸150抽X2层',
+          address: '包',
+          leibie:'生活用品',
+          lingshojia:'8.00',
+          zuidisj:'5.00',
+          shiczdj:'18.00',
+          cbckj:'3.00',
+          ztai:'上架'
+        }, {
+          date: '6210000000001',
+          name: '清风抽取式面巾纸150抽X2层',
+          address: '包',
+          leibie:'生活用品',
+          lingshojia:'8.00',
+          zuidisj:'5.00',
+          shiczdj:'18.00',
+          cbckj:'3.00',
+          ztai:'上架'
+        }],
+        multipleSelection: []
       }
     }
   }

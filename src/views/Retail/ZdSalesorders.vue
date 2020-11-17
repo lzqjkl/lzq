@@ -48,12 +48,12 @@
     </el-table-column>
     <el-table-column
       prop="zdbm"
-      label="终端编码"
-      width="100">
+      label="下单渠道"
+      width="130">
     </el-table-column>
     <el-table-column
       prop="hyry"
-      label="收银人员"
+      label="支付方式"
       width="120">
     </el-table-column>
     <el-table-column
@@ -151,17 +151,8 @@
           province: '18888888888',
           city: '880.00',
           mdmc:'产品大神（幸福店）',
-          zdbm:'001',
-          hyry:'syds',
-          zhuangtai:'交易完成',
-        }, {
-          date: 'ZDXS20180428102401',
-          name: '2018-04-24 10:24:01',
-          province: '---',
-          city: '2880.00',
-          mdmc:'产品大神（幸福店）',
-          zdbm:'001',
-          hyry:'syds',
+          zdbm:'Android客户端',
+          hyry:'支付宝',
           zhuangtai:'交易完成',
         }, {
           date: 'ZDXS20180428102401',
@@ -169,17 +160,8 @@
           province: '18888888888',
           city: '880.00',
           mdmc:'产品大神（幸福店）',
-          zdbm:'001',
-          hyry:'syds',
-          zhuangtai:'交易完成',
-        }, {
-          date: 'ZDXS20180428102401',
-          name: '2018-04-24 10:24:01',
-          province: '---',
-          city: '880.00',
-          mdmc:'产品大神（幸福店）',
-          zdbm:'001',
-          hyry:'syds',
+          zdbm:'PC端',
+          hyry:'微信',
           zhuangtai:'交易完成',
         }, {
           date: 'ZDXS20180428102401',
@@ -187,17 +169,8 @@
           province: '18888888888',
           city: '880.00',
           mdmc:'产品大神（幸福店）',
-          zdbm:'001',
-          hyry:'syds',
-          zhuangtai:'交易完成',
-        }, {
-          date: 'ZDXS20180428102401',
-          name: '2018-04-24 10:24:01',
-          province: '---',
-          city: '880.00',
-          mdmc:'产品大神（幸福店）',
-          zdbm:'001',
-          hyry:'syds',
+          zdbm:'Android客户端',
+          hyry:'支付宝',
           zhuangtai:'交易完成',
         }, {
           date: 'ZDXS20180428102401',
@@ -205,17 +178,8 @@
           province: '18888888888',
           city: '880.00',
           mdmc:'产品大神（幸福店）',
-          zdbm:'001',
-          hyry:'syds',
-          zhuangtai:'交易完成',
-        }, {
-          date: 'ZDXS20180428102401',
-          name: '2018-04-24 10:24:01',
-          province: '---',
-          city: '880.00',
-          mdmc:'产品大神（幸福店）',
-          zdbm:'001',
-          hyry:'syds',
+          zdbm:'PC端',
+          hyry:'微信',
           zhuangtai:'交易完成',
         }, {
           date: 'ZDXS20180428102401',
@@ -223,17 +187,53 @@
           province: '18888888888',
           city: '880.00',
           mdmc:'产品大神（幸福店）',
-          zdbm:'001',
-          hyry:'syds',
+          zdbm:'Android客户端',
+          hyry:'支付宝',
           zhuangtai:'交易完成',
         }, {
           date: 'ZDXS20180428102401',
           name: '2018-04-24 10:24:01',
-          province: '---',
+          province: '18888888888',
           city: '880.00',
           mdmc:'产品大神（幸福店）',
-          zdbm:'001',
-          hyry:'syds',
+          zdbm:'PC端',
+          hyry:'微信',
+          zhuangtai:'交易完成',
+        }, {
+          date: 'ZDXS20180428102401',
+          name: '2018-04-24 10:24:01',
+          province: '18888888888',
+          city: '880.00',
+          mdmc:'产品大神（幸福店）',
+          zdbm:'Android客户端',
+          hyry:'支付宝',
+          zhuangtai:'交易完成',
+        }, {
+          date: 'ZDXS20180428102401',
+          name: '2018-04-24 10:24:01',
+          province: '18888888888',
+          city: '880.00',
+          mdmc:'产品大神（幸福店）',
+          zdbm:'PC端',
+          hyry:'微信',
+          zhuangtai:'交易完成',
+        }, {
+          date: 'ZDXS20180428102401',
+          name: '2018-04-24 10:24:01',
+          province: '18888888888',
+          city: '880.00',
+          mdmc:'产品大神（幸福店）',
+          zdbm:'Android客户端',
+          hyry:'支付宝',
+          zhuangtai:'交易完成',
+        }, {
+          date: 'ZDXS20180428102401',
+          name: '2018-04-24 10:24:01',
+          province: '18888888888',
+          city: '880.00',
+          mdmc:'产品大神（幸福店）',
+          zdbm:'PC端',
+          hyry:'微信',
           zhuangtai:'交易完成',
         }]
       }

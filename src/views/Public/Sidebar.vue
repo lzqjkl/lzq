@@ -68,14 +68,14 @@
               <span>零售</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="5-1"><router-link to="/Salesorders" tag="div" >• 终端销售单</router-link></el-menu-item>
-              <el-menu-item index="5-2">• 终端退货单</el-menu-item>
-              <el-menu-item index="5-3">• 商城销售单</el-menu-item>
-              <el-menu-item index="5-4">• 终端销售交易明细</el-menu-item>
-              <el-menu-item index="5-5">• 终端财务收银明细</el-menu-item>
-              <el-menu-item index="5-6">• 终端销售交易汇总</el-menu-item>
-              <el-menu-item index="5-7">• 终端财务收银汇总</el-menu-item>
-              <el-menu-item index="5-8">• 终端财务退款汇总</el-menu-item>
+              <el-menu-item index="5-1"><router-link to="/Salesorders" tag="div">• 终端销售单</router-link></el-menu-item>
+              <el-menu-item index="5-2"><router-link to="/ZdReturnorder" tag="div">• 终端退货单</router-link></el-menu-item>
+              <el-menu-item index="5-3"><router-link to="/ZdSalesorders" tag="div">• 商城销售单</router-link></el-menu-item>
+              <el-menu-item index="5-4"><router-link to="/Terminalsalesdetails" tag="div">• 终端销售交易明细</router-link></el-menu-item>
+              <el-menu-item index="5-5"><router-link to="/Terminalfinancialdetails" tag="div">• 终端财务收银明细</router-link></el-menu-item>
+              <el-menu-item index="5-6"><router-link to="/Salestransactions" tag="div">• 终端销售交易汇总</router-link></el-menu-item>
+              <el-menu-item index="5-7"><router-link to="/Cashregister" tag="div">• 终端财务收银汇总</router-link></el-menu-item>
+              <el-menu-item index="5-8"><router-link to="/Financialrefunds" tag="div">• 终端财务退款汇总</router-link></el-menu-item>
             </el-menu-item-group>
           </el-submenu>
           <el-submenu index="6" class="el-submenu__title1">
@@ -85,7 +85,7 @@
             </template>
             <el-menu-item-group>
               <el-menu-item index="6-1"><router-link to="/Level" tag="div" >• 会员类别</router-link></el-menu-item>
-              <el-menu-item index="6-2">• 会员列表</el-menu-item>
+              <el-menu-item index="6-2"><router-link to="/MemberList" tag="div">• 会员列表</router-link></el-menu-item>
             </el-menu-item-group>
           </el-submenu>
         </el-menu>

@@ -14,6 +14,7 @@
     </div>
     <el-row class="anla">
   <el-button>导出</el-button>
+
     </el-row>
     <template>
   <el-table
@@ -28,33 +29,33 @@
     </el-table-column>
     <el-table-column
       prop="name"
-      label="下单时间"
-      width="170">
+      label="商品数量"
+      width="100">
     </el-table-column>
     <el-table-column
       prop="province"
-      label="手机会员"
+      label="订单金额"
       width="120">
     </el-table-column>
     <el-table-column
       prop="city"
-      label="定点金额"
+      label="门店编码"
       width="80">
     </el-table-column>
     <el-table-column
       prop="mdmc"
-      label="门店名称"
+      label="终端编码"
       width="150">
     </el-table-column>
     <el-table-column
       prop="zdbm"
-      label="终端编码"
+      label="收银人员"
       width="100">
     </el-table-column>
     <el-table-column
       prop="hyry"
-      label="收银人员"
-      width="120">
+      label="下单时间"
+      width="220">
     </el-table-column>
     <el-table-column
       prop="zhuangtai"
@@ -146,95 +147,95 @@
         },
         formLabelWidth: '120px',
         tableData: [{
-          date: 'ZDXS20180428102401',
-          name: '2018-04-24 10:24:01',
-          province: '18888888888',
-          city: '880.00',
-          mdmc:'产品大神（幸福店）',
-          zdbm:'001',
-          hyry:'syds',
-          zhuangtai:'交易完成',
+          date: 'ZDTK20180428102401',
+          name: '8',
+          province: '880.00',
+          city: '0001',
+          mdmc:'001',
+          zdbm:'syds',
+          hyry:'2018-04-24 10:24:01',
+          zhuangtai:'已完成',
         }, {
-          date: 'ZDXS20180428102401',
-          name: '2018-04-24 10:24:01',
-          province: '---',
-          city: '2880.00',
-          mdmc:'产品大神（幸福店）',
-          zdbm:'001',
-          hyry:'syds',
-          zhuangtai:'交易完成',
+          date: 'ZDTK20180428102401',
+          name: '8',
+          province: '880.00',
+          city: '0001',
+          mdmc:'001',
+          zdbm:'syds',
+          hyry:'2018-04-24 10:24:01',
+          zhuangtai:'已完成',
         }, {
-          date: 'ZDXS20180428102401',
-          name: '2018-04-24 10:24:01',
-          province: '18888888888',
-          city: '880.00',
-          mdmc:'产品大神（幸福店）',
-          zdbm:'001',
-          hyry:'syds',
-          zhuangtai:'交易完成',
+          date: 'ZDTK20180428102401',
+          name: '8',
+          province: '880.00',
+          city: '0001',
+          mdmc:'001',
+          zdbm:'syds',
+          hyry:'2018-04-24 10:24:01',
+          zhuangtai:'已完成',
         }, {
-          date: 'ZDXS20180428102401',
-          name: '2018-04-24 10:24:01',
-          province: '---',
-          city: '880.00',
-          mdmc:'产品大神（幸福店）',
-          zdbm:'001',
-          hyry:'syds',
-          zhuangtai:'交易完成',
+          date: 'ZDTK20180428102401',
+          name: '8',
+          province: '880.00',
+          city: '0001',
+          mdmc:'001',
+          zdbm:'syds',
+          hyry:'2018-04-24 10:24:01',
+          zhuangtai:'已完成',
         }, {
-          date: 'ZDXS20180428102401',
-          name: '2018-04-24 10:24:01',
-          province: '18888888888',
-          city: '880.00',
-          mdmc:'产品大神（幸福店）',
-          zdbm:'001',
-          hyry:'syds',
-          zhuangtai:'交易完成',
+          date: 'ZDTK20180428102401',
+          name: '8',
+          province: '880.00',
+          city: '0001',
+          mdmc:'001',
+          zdbm:'syds',
+          hyry:'2018-04-24 10:24:01',
+          zhuangtai:'已完成',
         }, {
-          date: 'ZDXS20180428102401',
-          name: '2018-04-24 10:24:01',
-          province: '---',
-          city: '880.00',
-          mdmc:'产品大神（幸福店）',
-          zdbm:'001',
-          hyry:'syds',
-          zhuangtai:'交易完成',
+          date: 'ZDTK20180428102401',
+          name: '8',
+          province: '880.00',
+          city: '0001',
+          mdmc:'001',
+          zdbm:'syds',
+          hyry:'2018-04-24 10:24:01',
+          zhuangtai:'已完成',
         }, {
-          date: 'ZDXS20180428102401',
-          name: '2018-04-24 10:24:01',
-          province: '18888888888',
-          city: '880.00',
-          mdmc:'产品大神（幸福店）',
-          zdbm:'001',
-          hyry:'syds',
-          zhuangtai:'交易完成',
+          date: 'ZDTK20180428102401',
+          name: '8',
+          province: '880.00',
+          city: '0001',
+          mdmc:'001',
+          zdbm:'syds',
+          hyry:'2018-04-24 10:24:01',
+          zhuangtai:'已完成',
         }, {
-          date: 'ZDXS20180428102401',
-          name: '2018-04-24 10:24:01',
-          province: '---',
-          city: '880.00',
-          mdmc:'产品大神（幸福店）',
-          zdbm:'001',
-          hyry:'syds',
-          zhuangtai:'交易完成',
+          date: 'ZDTK20180428102401',
+          name: '8',
+          province: '880.00',
+          city: '0001',
+          mdmc:'001',
+          zdbm:'syds',
+          hyry:'2018-04-24 10:24:01',
+          zhuangtai:'已完成',
         }, {
-          date: 'ZDXS20180428102401',
-          name: '2018-04-24 10:24:01',
-          province: '18888888888',
-          city: '880.00',
-          mdmc:'产品大神（幸福店）',
-          zdbm:'001',
-          hyry:'syds',
-          zhuangtai:'交易完成',
+          date: 'ZDTK20180428102401',
+          name: '8',
+          province: '880.00',
+          city: '0001',
+          mdmc:'001',
+          zdbm:'syds',
+          hyry:'2018-04-24 10:24:01',
+          zhuangtai:'已完成',
         }, {
-          date: 'ZDXS20180428102401',
-          name: '2018-04-24 10:24:01',
-          province: '---',
-          city: '880.00',
-          mdmc:'产品大神（幸福店）',
-          zdbm:'001',
-          hyry:'syds',
-          zhuangtai:'交易完成',
+          date: 'ZDTK20180428102401',
+          name: '8',
+          province: '880.00',
+          city: '0001',
+          mdmc:'001',
+          zdbm:'syds',
+          hyry:'2018-04-24 10:24:01',
+          zhuangtai:'已完成',
         }]
       }
     }
