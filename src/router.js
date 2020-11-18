@@ -5,10 +5,10 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
-    {
-      path: '/',
-      redirect:'/gong'
-    }, 
+    // {
+    //   path: '/',
+    //   redirect:'/gong'
+    // }, 
     {
       path: '/gong',
       component: () => import('./views/Public/gong.vue'),
@@ -119,6 +119,10 @@ export default new Router({
           component: () => import('./views/Member/MemberList.vue'),
         }
       ]
+    },{
+      path: '/',
+      name:'Login',
+      component: () => import('./views/Public/Login.vue'),
     }
   ]
 })

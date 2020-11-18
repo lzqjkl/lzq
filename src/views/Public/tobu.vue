@@ -23,6 +23,7 @@
 <style>
 
   #app{
+    z-index: 99;
     padding: 0px;
     background: #0066ff;
     width: 1422px;
