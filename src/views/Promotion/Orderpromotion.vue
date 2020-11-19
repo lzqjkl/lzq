@@ -24,8 +24,10 @@
 </el-input>
 <span class="bju">高级搜索</span>
 <el-row class="anjiana">
-  <el-button>导出</el-button>
-      <el-button type="primary">新增</el-button>
+  <el-button class="daochua">导出</el-button>
+  <a @click="open">
+      <el-button type="primary" class="daochuab">新增</el-button>
+      </a>
     </el-row>
 </p>
   <template>
@@ -121,6 +123,10 @@
 .input-with-select{
   width: 300px;
 }
+.daochua{
+  margin-right: 10px;
+}
+
   .el-dropdown-link {
     cursor: pointer;
     color: #409EFF;
@@ -150,6 +156,9 @@ export default {
       },
        handleClick(row) {
         console.log(row);
+      },
+      open(){
+        this.$router.push({ path: '/neworderpromotion'})
       }
     },
       data() {

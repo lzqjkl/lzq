@@ -24,10 +24,10 @@
     <el-input placeholder="05" v-model="input" :disabled="true"></el-input>
     </el-form-item>
     <el-form-item label="*名称" :label-width="formLabelWidth">
-    <el-input v-model="input" placeholder="家电数码"></el-input>
+    <el-input v-model="input2" placeholder="家电数码"></el-input>
     </el-form-item>
     <el-form-item label="排序" :label-width="formLabelWidth">
-    <el-input v-model="input" placeholder="0"></el-input>
+    <el-input v-model="input3" placeholder="0"></el-input>
     </el-form-item>
   </el-form>
   <div slot="footer" class="dialog-footer">
@@ -135,6 +135,8 @@
       return {
         fullscreenLoading: false,
         input: '',
+        input2:'',
+        input3:'',
         dialogTableVisible: false,
         dialogFormVisible: false,
         form: {

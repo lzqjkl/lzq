@@ -118,6 +118,10 @@ export default new Router({
           path: '/MemberList',
           component: () => import('./views/Member/MemberList.vue'),
         }
+        ,{
+          path: '/neworderpromotion',
+          component: () => import('./views/Public/Neworderpromotion.vue'),
+        }
       ]
     },{
       path: '/',

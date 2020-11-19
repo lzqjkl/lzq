@@ -12,10 +12,10 @@
     </el-input>
     </div>
     <el-row class="anjian">
-  <el-button>导出</el-button>
-  <router-link  to="/newsuppliers">
+  <el-button class="daochua">导出</el-button>
+  <a @click="open">
       <el-button type="primary">新增</el-button>
-  </router-link>
+      </a>
     </el-row>
     <template class="a">
   <el-table
@@ -94,6 +94,9 @@
     margin-left: 1050px;
     margin-bottom: 15px;
 }
+.daochua{
+  margin-right: 10px;
+}
 .block{
     margin-left: 300px;
 }
@@ -119,6 +122,9 @@
       },
       handleClick(row) {
         console.log(row);
+      },
+      open(){
+        this.$router.push({ path: '/Newsuppliers'})
       }
     },
     data() {
